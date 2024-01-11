@@ -41,14 +41,14 @@ ${renderLicenseBadge(data.licenses)}
   ## Description:
   ###${data.ProjectDescription}
   ## Table of Contents:
-  ###* [Installation](#Installation)
-  ###* [Usage](#Usage)
-  ###* [Credits](#Credits)
-  ###* [License](#License)
-  ###* [Badges](#Badges)
-  ###* [Features](#Features)
-  ###* [Contributing](#Contributing)
-  ###* [Tests](#Tests)
+  * [Installation](#Installation)
+  * [Usage](#Usage)
+  * [Credits](#Credits)
+  * [License](#License)
+  * [Badges](#Badges)
+  * [Features](#Features)
+  * [Contributing](#Contributing)
+  * [Tests](#Tests)
   ## Installation:
   ###${data.Installation}
   ## Usage:
