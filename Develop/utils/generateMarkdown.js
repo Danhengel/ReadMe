@@ -39,7 +39,7 @@ ${renderLicenseBadge(data.licenses)}
 
   # ${data.ProjectTitle} 
   ## Description:
-  ###${data.ProjectDescription}
+  ${data.ProjectDescription}
   ## Table of Contents:
   * [Installation](#Installation)
   * [Usage](#Usage)
@@ -50,21 +50,21 @@ ${renderLicenseBadge(data.licenses)}
   * [Contributing](#Contributing)
   * [Tests](#Tests)
   ## Installation:
-  ###${data.Installation}
+  ${data.Installation}
   ## Usage:
-  ###${data.Usage}
+  ${data.Usage}
   ## Credits:
-  ###${data.Credits}
+  ${data.Credits}
   ## License:
-  ###${data.License}
+  ${data.License}
   ## Badges:
-  ###${data.Badges}
+  ${data.Badges}
   ## Features:
-  ###${data.Features}
+  ${data.Features}
   ## Contributing:
-  ###${data.HowtoContribute}
+  ${data.HowtoContribute}
   ## Tests:
-  ###${data.Tests}
+  ${data.Tests}
   ## Questions:
   Please send your questions [here](mailto:${data.emailAddress}?subject=[GitHub]%20Dev%20Connect) or visit [github/${data.GitHubUsername}](https://github.com/${data.GitHubUsername}).`;
   }
