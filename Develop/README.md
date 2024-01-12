@@ -1,7 +1,7 @@
-# srftyghtrgsh<br>
-  ![license](https://img.shields.io/badge/license-Creative Commons Zero v1.0 Universal-blue.svg)]
+# wsrg<br>
+  ![license](https://img.shields.io/badge/license-GNU General Public v2.0-blue.svg)]
   ## Description:
-  srtehrth
+  detrhetdhb
   ## Table of Contents:
   * [Installation](#Installation)
   * [Usage](#Usage)
@@ -12,25 +12,25 @@
   * [Contributing](#Contributing)
   * [Tests](#Tests)
   ## Installation:
-  srdztyheraztsdh
+  detrherdth
   ## Usage:
-  rsythrstyh
+  edrg
   ## Credits:
-  srethysrteh
+  edsrtghbdetf
   ## License:
-  ![license](https://img.shields.io/badge/license-Creative Commons Zero v1.0 Universal-blue.svg)] <br>
-  Creative Commons Zero v1.0 Universal <br>
+  ![license](https://img.shields.io/badge/license-GNU General Public v2.0-blue.svg)] <br>
+  GNU General Public v2.0 <br>
   undefined <br>
   ## Badges:  
-  rsdythjsygj
+  dethbdtgfhb
   ## Features:
-  sryjsryjs
+  dtghnbdtgrhb
   ## Contributing:
-  sdrfyjyrtjytj
+  dtfghbndtgnbh
   ## Tests:
-  srdyjydtjdgf
+  dtgbhndftgbnh
   ## Questions:
   Please send your questions to
-   - Emial: [sdfrtyjdtyrfjn](mailto:user@example.com) <br>
+   - Emial: [dftgbhdtghb](mailto:user@example.com) <br>
   or visit 
-   - GitHub: [dytfjdytfjdhfgj](https://github.com/dytfjdytfjdhfgj).
+   - GitHub: [dtgbhdtgbh](https://github.com/dtgbhdtgbh).
