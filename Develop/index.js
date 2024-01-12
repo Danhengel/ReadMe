@@ -3,40 +3,36 @@ const fs = require('fs');
 const path = require('path');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
-
-
-
-  
 const questions = [
       
     {
         type: 'input',
-        name: 'ProjectTitle',
+        name: 'projectTitle',
         message: 'Add Application Name / Project Title?',
     },
     {
         type: 'input',
-        name: 'ProjectDescription',
+        name: 'projectDescription',
         message: 'What is the description of Application?',
     },
     {
         type: 'input',
-        name: 'Installation',
+        name: 'installation',
         message: 'Directions on how to install Application.',
     },
     {
         type: 'input',
-        name: 'Usage',
+        name: 'usage',
         message: 'What is the purpose of this application?',
     },
     {
         type: 'input',
-        name: 'Credits',
+        name: 'credits',
         message: 'Add Credits related to the Application.',
     },
     {
         type: 'list',
-        name: 'License',
+        name: 'license',
         message: 'Select license from following:',
             choices: [
               "Apache2.0",
@@ -53,27 +49,27 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'Badges',
+        name: 'badges',
         message: 'Add any Badges realted to Application.',
     },
     {
         type: 'input',
-        name: 'Features',
+        name: 'features',
         message: 'Add Features realted to Application.',
     },
     {
         type: 'input',
-        name: 'HowtoContribute',
+        name: 'howtoContribute',
         message: 'How does anyone Contribute to the building of this Application?',
     },
     {
         type: 'input',
-        name: 'Tests',
+        name: 'tests',
         message: 'How and what tests are related to this Application.',
     },
     {
         type: 'input',
-        name: 'GitHubUsername',
+        name: 'gitHubUsername',
         message: 'What is your GitHub username?',
     },
     {
@@ -100,13 +96,5 @@ function init () {
         writeToFile("README.md", generateMarkdown(userInput));
     });
 };
-
-
-
-    //     ]).then(function(data) {
-    //         console.log("Generating ReadMe file...");
-    //         writeToFile("README.md", generateMarkdown({...data}));  
-    // });
-    // }
  
 init()

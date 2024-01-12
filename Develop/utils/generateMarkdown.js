@@ -2,7 +2,7 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 const index = require('../index.js');+
 
-function renderLicenseBadge(License) {
+function renderLicenseBadge(license) {
   const licenseBadges = {    
     'Apache 2.0': 'https://img.shields.io/badge/License-Apache_2.0-blue.svg',
     'GNU Public v3.0': 'https://img.shields.io/badge/License-GPLv3-blue.svg',
@@ -15,13 +15,13 @@ function renderLicenseBadge(License) {
     'Mozilla Public 2.0': 'https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg',
   };
 
-  if (License in licenseBadges) {
-     return `![License Badge](${licenseBadges[License]})`;
+  if (license in licenseBadges) {
+     return `![license Badge](${licenseBadges[license]})`;
   }
     return '';
 }
 
-function renderLicenseLink(License) {
+function renderLicenseLink(license) {
   const licenseLinks = {
   'Apache 2.0': 'https://www.apache.org/licenses/LICENSE-2.0',
   'GNU Public v3.0': 'https://www.gnu.org/licenses/gpl-3.0.en.html',
@@ -35,18 +35,18 @@ function renderLicenseLink(License) {
   'none': '',
   };
 
-  if (licenseLinks.hasOwnProperty(License)) {
-    return licenseLinks[License];
+  if (licenseLinks.hasOwnProperty(license)) {
+    return licenseLinks[license];
   }
   return 'https://opensource.org/licenses';
 }
 
 
 function generateMarkdown(data) {
-  return`# ${data.ProjectTitle}<br>
-  ![license](https://img.shields.io/badge/license-${data.License}-blue.svg)]
+  return`# ${data.projectTitle}<br>
+  ![license](https://img.shields.io/badge/license-${data.license}-blue.svg)]
   ## Description:
-  ${data.ProjectDescription}
+  ${data.projectDescription}
   ## Table of Contents:
   * [Installation](#Installation)
   * [Usage](#Usage)
@@ -57,28 +57,28 @@ function generateMarkdown(data) {
   * [Contributing](#Contributing)
   * [Tests](#Tests)
   ## Installation:
-  ${data.Installation}
+  ${data.installation}
   ## Usage:
-  ${data.Usage}
+  ${data.usage}
   ## Credits:
-  ${data.Credits}
+  ${data.credits}
   ## License:
-  ![license](https://img.shields.io/badge/license-${data.License}-blue.svg)] <br>
-  ${data.License} <br>
-  ${data.License.licenseLinks} <br>
+  ![license](https://img.shields.io/badge/license-${data.license}-blue.svg)] <br>
+  ${data.license} <br>
+  ${data.license.licenseLinks} <br>
   ## Badges:  
-  ${data.Badges}
+  ${data.badges}
   ## Features:
-  ${data.Features}
+  ${data.features}
   ## Contributing:
-  ${data.HowtoContribute}
+  ${data.howtoContribute}
   ## Tests:
-  ${data.Tests}
+  ${data.tests}
   ## Questions:
   Please send your questions to
    - Emial: [${data.emailAddress}](mailto:user@example.com) <br>
   or visit 
-   - GitHub: [${data.GitHubUsername}](https://github.com/${data.GitHubUsername}).`;
+   - GitHub: [${data.gitHubUsername}](https://github.com/${data.gitHubUsername}).`;
   }
 
   module.exports = generateMarkdown;

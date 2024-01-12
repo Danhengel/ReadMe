@@ -1,7 +1,7 @@
-# wsrg<br>
-  ![license](https://img.shields.io/badge/license-GNU General Public v2.0-blue.svg)]
+# TITLE OF PROJECT<br>
+  ![license](https://img.shields.io/badge/license-GNU Affero General Public v3.0-blue.svg)]
   ## Description:
-  detrhetdhb
+  EWSRGERGETRHGBETHB
   ## Table of Contents:
   * [Installation](#Installation)
   * [Usage](#Usage)
@@ -12,25 +12,25 @@
   * [Contributing](#Contributing)
   * [Tests](#Tests)
   ## Installation:
-  detrherdth
+  ETHBERTHBGERTDHBGREDTHGB
   ## Usage:
-  edrg
+  ERDTGHBERTDHGBERTDHBRETDHB
   ## Credits:
-  edsrtghbdetf
+  ETGHETHGBTREDHGBTREDGHB
   ## License:
-  ![license](https://img.shields.io/badge/license-GNU General Public v2.0-blue.svg)] <br>
-  GNU General Public v2.0 <br>
+  ![license](https://img.shields.io/badge/license-GNU Affero General Public v3.0-blue.svg)] <br>
+  GNU Affero General Public v3.0 <br>
   undefined <br>
   ## Badges:  
-  dethbdtgfhb
+  ETRHRYJTRYJHYRSJH
   ## Features:
-  dtghnbdtgrhb
+  YRTJRYJYRSJRTYSJH
   ## Contributing:
-  dtfghbndtgnbh
+  RYJRYSJRYSJRYSJ
   ## Tests:
-  dtgbhndftgbnh
+  RSYHJRSYJHSRYJNRTYFJ
   ## Questions:
   Please send your questions to
-   - Emial: [dftgbhdtghb](mailto:user@example.com) <br>
+   - Emial: [RSYTJHRSTYJHSRTYJHRSYTHJ](mailto:user@example.com) <br>
   or visit 
-   - GitHub: [dtgbhdtgbh](https://github.com/dtgbhdtgbh).
+   - GitHub: [SRYHJSRTHSERTHJSDRJHYYR](https://github.com/SRYHJSRTHSERTHJSDRJHYYR).
