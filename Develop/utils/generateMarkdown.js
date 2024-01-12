@@ -1,6 +1,8 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
-const index = require('../index.js');
+const index = require('../index.js');+
+
+
 
 // function renderLicenseBadge(license) {
 
@@ -50,8 +52,8 @@ function renderLicenseBadge(license) {
     'Mozilla Public 2.0': 'https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg',
   };
 
-  if (license in licenseBadges) {
-     return `![License Badge](${licenseBadges[license]})`;
+  if (License in licenseBadges) {
+     return `![License Badge](${licenseBadges[License]})`;
   }
     return '';
 }
@@ -75,16 +77,11 @@ function renderLicenseBadge(license) {
 //   }
 // }
 
+
+
+
 function generateMarkdown(data) {
-
-  return `# ${data.title}'
-  }
-
-${renderLicenseBadge(data.licenses)}
-
-![badge](https://img.shields.io/badge/license-${data.licenseBadges}-brightgreen)<br />
-
-  # ${data.ProjectTitle} 
+  return`# ${data.ProjectTitle}
   ## Description:
   ${data.ProjectDescription}
   ## Table of Contents:
@@ -103,7 +100,7 @@ ${renderLicenseBadge(data.licenses)}
   ## Credits:
   ${data.Credits}
   ## License:
-  ![badge](https://img.shields.io/badge/license-${data.licenseBadges}-brightgreen)<br />
+  ![license](https://img.shields.io/badge/license-${data.License}-blue.svg)](https://shield)
   ${data.License}
   ## Badges:  
   ${data.Badges}
@@ -114,7 +111,10 @@ ${renderLicenseBadge(data.licenses)}
   ## Tests:
   ${data.Tests}
   ## Questions:
-  Please send your questions [here](mailto:${data.emailAddress}?subject=[GitHub]%20Dev%20Connect) or visit [github/${data.GitHubUsername}](https://github.com/${data.GitHubUsername}).`;
+  Please send your questions to
+   - Emial: [${data.emailAddress}](mailto:user@example.com)
+  or visit 
+   - GitHub: [${data.GitHubUsername}](https://github.com/${data.GitHubUsername}).`;
   }
 
   module.exports = generateMarkdown;

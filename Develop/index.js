@@ -5,9 +5,7 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
 
 
 
-function writeToFile(fileName, data) {
-    fs.writeFileSync(path.join(process.cwd(), fileName), data);
-  }
+
   
   function init() {
     inquirer.prompt([
@@ -84,11 +82,32 @@ function writeToFile(fileName, data) {
         name: 'emailAddress',
         message: 'What is your email address?',
     }
+    ])};
 
-    ]).then(function(data) {
-        console.log("Generating Markdown...");
-        writeToFile("README.md", generateMarkdown({...data}));  
-  });
-  }
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) => {
+        if (err) {
+            return console.log(err);
+        }
+    
+        console.log("Done! You will fiund your README file available.");
+    });
+};
+
+function init () {
+    inquirer.prompt(data)
+    .then(function (userInput) {
+        console.log(userInput)
+        writeToFile("README.md", generateMarkdown(userInput));
+    });
+};
+
+
+
+    //     ]).then(function(data) {
+    //         console.log("Generating ReadMe file...");
+    //         writeToFile("README.md", generateMarkdown({...data}));  
+    // });
+    // }
  
-  init()
+init()
