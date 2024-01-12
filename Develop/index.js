@@ -4,6 +4,7 @@ const path = require('path');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
 
+
 function writeToFile(fileName, data) {
     fs.writeFileSync(path.join(process.cwd(), fileName), data);
   }
@@ -50,7 +51,7 @@ function writeToFile(fileName, data) {
               "GNU Affero General Public v3.0",
               "GNU General Public v2.0",
               "Mozilla Public 2.0",
-              "none",
+              "Open",
             ],
     },
     {
