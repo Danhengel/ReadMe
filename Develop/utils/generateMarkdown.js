@@ -2,8 +2,6 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 const index = require('../index.js');
 
-
-
 // function renderLicenseBadge(license) {
 
 // const licenseBadges = {
@@ -41,15 +39,15 @@ const index = require('../index.js');
 
 function renderLicenseBadge(license) {
   const licenseBadges = {    
-    'Apache 2.0': 'https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0',
-    'GNU Public v3.0': '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)',
-    'MIT': '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
-    'Boost Software 1.0': '[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)',
-    'Creative Commons Zero v1.0 Universal': '[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)',
-    'Eclipse Public 2.0': '[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)',
-    'GNU Affero General Public v3.0': '[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)',
-    'GNU General Public v2.0': '[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)',
-    'Mozilla Public 2.0': '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)',
+    'Apache 2.0': 'https://img.shields.io/badge/License-Apache_2.0-blue.svg',
+    'GNU Public v3.0': 'https://img.shields.io/badge/License-GPLv3-blue.svg',
+    'MIT': 'https://img.shields.io/badge/License-MIT-yellow.svg',
+    'Boost Software 1.0': 'https://img.shields.io/badge/License-Boost_1.0-lightblue.svg',
+    'Creative Commons Zero v1.0 Universal': 'https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg',
+    'Eclipse Public 2.0': 'https://img.shields.io/badge/License-EPL_1.0-red.svg',
+    'GNU Affero General Public v3.0': 'https://img.shields.io/badge/License-AGPL_v3-blue.svg',
+    'GNU General Public v2.0': 'https://img.shields.io/badge/License-GPL_v2-blue.svg',
+    'Mozilla Public 2.0': 'https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg',
   };
 
   if (license in licenseBadges) {
@@ -105,10 +103,9 @@ ${renderLicenseBadge(data.licenses)}
   ## Credits:
   ${data.Credits}
   ## License:
-  ${data.License}
-  ## Badges:
   ![badge](https://img.shields.io/badge/license-${data.licenseBadges}-brightgreen)<br />
-  This application can be found at the following:
+  ${data.License}
+  ## Badges:  
   ${data.Badges}
   ## Features:
   ${data.Features}
@@ -119,7 +116,7 @@ ${renderLicenseBadge(data.licenses)}
   ## Questions:
   Please send your questions [here](mailto:${data.emailAddress}?subject=[GitHub]%20Dev%20Connect) or visit [github/${data.GitHubUsername}](https://github.com/${data.GitHubUsername}).`;
   }
-  
+
   module.exports = generateMarkdown;
 
 

@@ -40,7 +40,7 @@ function writeToFile(fileName, data) {
     {
         type: 'list',
         name: 'License',
-        message: 'Select license(s) from following:',
+        message: 'Select license from following:',
             choices: [
               "Apache2.0",
               "GNU Public v3.0",
