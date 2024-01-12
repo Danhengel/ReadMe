@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
+
 function writeToFile(fileName, data) {
     fs.writeFileSync(path.join(process.cwd(), fileName), data);
   }
@@ -40,7 +41,6 @@ function writeToFile(fileName, data) {
         name: 'License',
         message: 'Select license(s) from following:',
             choices: [
-              "None",
               "Apache2.0",
               "GNU Public v3.0",
               "MIT",
@@ -49,9 +49,8 @@ function writeToFile(fileName, data) {
               "Eclipse Public 2.0",
               "GNU Affero General Public v3.0",
               "GNU General Public v2.0",
-              "GNU Lesser General Public v2.1",
               "Mozilla Public 2.0",
-              "the Unilicense"
+              "none",
             ],
     },
     {
