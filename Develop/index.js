@@ -7,8 +7,7 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
 
 
   
-  function init() {
-    inquirer.prompt([
+const questions = [
       
     {
         type: 'input',
@@ -82,7 +81,7 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
         name: 'emailAddress',
         message: 'What is your email address?',
     }
-    ])};
+    ];
 
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) => {
@@ -90,12 +89,12 @@ function writeToFile(fileName, data) {
             return console.log(err);
         }
     
-        console.log("Done! You will fiund your README file available.");
+        console.log("Done! You will find your README file available.");
     });
 };
 
 function init () {
-    inquirer.prompt(data)
+    inquirer.prompt(questions)
     .then(function (userInput) {
         console.log(userInput)
         writeToFile("README.md", generateMarkdown(userInput));
