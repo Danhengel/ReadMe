@@ -16,13 +16,16 @@ function renderLicenseBadge(license) {
   };
 
   if (license in licenseBadges) {
-     return `![license Badge](${licenseBadges[license]})`;
-  }
+    return licenseBadges[license];
+  } else {
     return '';
+  }
 }
 
-function renderLicenseLink(license) {
+function renderLicenseLink() {
+
   const licenseLinks = {
+
   'Apache 2.0': 'https://www.apache.org/licenses/LICENSE-2.0',
   'GNU Public v3.0': 'https://www.gnu.org/licenses/gpl-3.0.en.html',
   'MIT': 'https://opensource.org/licenses/MIT',
@@ -32,21 +35,47 @@ function renderLicenseLink(license) {
   'GNU Affero General Public v3.0': 'https://www.gnu.org/licenses/agpl-3.0.en.html',
   'GNU General Public v2.0': 'https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html',
   'Mozilla Public 2.0': 'https://www.mozilla.org/en-US/MPL/2.0/',
-  'none': '',
   };
 
-  if (licenseLinks.hasOwnProperty(license)) {
-    return licenseLinks[license];
+  // if (license in licenseLinks) {
+  //   return licenseLinks[license];
+  // } else {
+  //   return '';
+  // }
+}
+
+
+function renderLicenseSection(license) {
+
+  const licenseTexts = {
+    'Apache 2.0': 'Apache 2.0 License Text',
+    'GNU Public v3.0': 'GNU Public v3.0 License Text',
+    'MIT': 'MIT License Text',
+    'Boost Software 1.0': 'Boost Software 1.0 License Text',
+    'Creative Commons Zero v1.0 Universal':  'Creative Commons Zero v1.0 Universal License Text',
+    'Eclipse Public 2.0': 'Eclipse Public 2.0 License Text',
+    'GNU Affero General Public v3.0': 'GNU Affero General Public v3.0 License Text',
+    'GNU General Public v2.0': 'GNU General Public v2.0 License Text',
+    'Mozilla Public 2.0': 'Mozilla Public 2.0',
+  };
+
+  if (license in licenseTexts) {
+    return licenseTexts[license];
+  } else {
+    return '';
   }
-  return 'https://opensource.org/licenses';
 }
 
 
 function generateMarkdown(data) {
-  return`# ${data.projectTitle}<br>
-  ![license](https://img.shields.io/badge/license-${data.license}-blue.svg)]
+
+  return`
+  
+  # ${data.projectTitle}
+
   ## Description:
   ${data.projectDescription}
+
   ## Table of Contents:
   * [Installation](#Installation)
   * [Usage](#Usage)
@@ -56,30 +85,35 @@ function generateMarkdown(data) {
   * [Features](#Features)
   * [Contributing](#Contributing)
   * [Tests](#Tests)
+  
   ## Installation:
   ${data.installation}
+
   ## Usage:
   ${data.usage}
+
   ## Credits:
   ${data.credits}
+
   ## License:
-  ![license](https://img.shields.io/badge/license-${data.license}-blue.svg)] <br>
-  ${data.license} <br>
-  ${data.license.licenseLinks} <br>
+  This project is licensed under the ${data.license} license. [Learn more](${renderLicenseLink(data.license)})
+
   ## Badges:  
   ${data.badges}
+
   ## Features:
   ${data.features}
+
   ## Contributing:
   ${data.howtoContribute}
+
   ## Tests:
   ${data.tests}
+
   ## Questions:
-  Please send your questions to
-   - Emial: [${data.emailAddress}](mailto:user@example.com) <br>
-  or visit 
-   - GitHub: [${data.gitHubUsername}](https://github.com/${data.gitHubUsername}).`;
-  }
+  If you have any questions, please reach out to me at ${data.emailAddress}. You can also find more of my work on [GitHub](https://github.com/${data.gitHubUsername}).
+  `;
+}
 
   module.exports = generateMarkdown;
 
