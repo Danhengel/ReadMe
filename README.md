@@ -1,41 +1,31 @@
+# README Generator 
+  ![Github licence](http://img.shields.io/badge/license-MIT-blue.svg)
 
-1
-![Badge](https://img.shields.io/badge/License-Apache 2.0-blue.svg)
+  ## Description 
+  This application was created to generate a high-quality, professional README depending on a series of questions a user answers in their command line using Node.js
 
-Description:
-2
+  ## Table of Contents
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [Questions](#questions)
+  
+  ## Installation 
+  The user should clone the repository from GitHub and download Node. This application also requires a file system and inquirer module. 
 
-Table of Contents:
-Installation
-Usage
-Credits
-License
-Badges
-Features
-Contributing
-Tests
-Installation:
-3
+  ## Usage 
+  Use inquirer from your command line to answer questions about your project.
 
-Usage:
-4
+  ## License 
+  This project is license under MIT
 
-Credits:
-5
+  ## Contributing 
+  Contributors should read the installation section. 
 
-License
-This project is licensed under Apache 2.0 license.
-Badges:
-6
+  ## Tests
+  npm test
 
-Features:
-7
-
-Contributing:
-8
-
-Tests:
-9
-
-Questions:
-If you have any questions, please reach out to me at 10. You can also find more of my work on GitHub.
+  ## Questions
+  If you have any questions about this projects, please contact me directly at d.hengel@yahoo.com. You can view more of my projects at https://github.com/Danhengel.
